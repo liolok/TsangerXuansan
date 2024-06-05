@@ -29,6 +29,8 @@ local replaces = {
     NEWFONT                 = "spirequal",
     NEWFONT_SMALL           = "spirequal",
     BODYTEXTFONT            = "stint_outline",
+    NUMBERFONT              = "stint_outline",
+    SMALLNUMBERFONT         = "stint_outline",
 }
 
 local function RegisterFonts()
