@@ -15,8 +15,6 @@ local assets = {}
 for _, v in pairs(fonts) do table.insert(assets, _G.Asset("FONT", MODROOT.."fonts/"..v..".zip")) end
 
 local replaces = {
-    DEFAULTFONT = "belisaplumilla50_outline",
-    DIALOGFONT = "belisaplumilla50_outline",
     TITLEFONT = "belisaplumilla100_outline",
     UIFONT = "belisaplumilla50_outline",
     BUTTONFONT = "bellefair",
