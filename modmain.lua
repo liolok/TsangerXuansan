@@ -92,7 +92,7 @@ AddClassPostConstruct("widgets/itemtile", function(self)
 end)
 
 AddClassPostConstruct("widgets/ingredientui", function(self)
-    if self.quant then self.quant:SetSize(25 / ratio) end
+    if self.quant then self.quant:SetSize(44 / ratio) end
 end)
 
 AddClassPostConstruct("widgets/skincollector", function(self)
