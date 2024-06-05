@@ -1,8 +1,7 @@
 local _G = GLOBAL
 
 local fonts = {
-    "belisaplumilla50_outline",
-    "belisaplumilla100_outline",
+    "belisaplumilla_outline",
     "bellefair_outline",
     "bellefair",
     "hammerhead",
@@ -15,8 +14,8 @@ local assets = {}
 for _, v in pairs(fonts) do table.insert(assets, _G.Asset("FONT", MODROOT.."fonts/"..v..".zip")) end
 
 local replaces = {
-    TITLEFONT = "belisaplumilla100_outline",
-    UIFONT = "belisaplumilla50_outline",
+    TITLEFONT = "belisaplumilla_outline",
+    UIFONT = "belisaplumilla_outline",
     BUTTONFONT = "bellefair",
     NEWFONT = "spirequal",
     NEWFONT_SMALL = "spirequal",
@@ -26,10 +25,10 @@ local replaces = {
     BODYTEXTFONT = "stint_outline",
     CHATFONT = "bellefair",
     CHATFONT_OUTLINE = "bellefair_outline",
-    TALKINGFONT = "belisaplumilla50_outline",
-    TALKINGFONT_HERMIT = "belisaplumilla50_outline",
-    TALKINGFONT_TRADEIN = "belisaplumilla50_outline",
-    TALKINGFONT_WORMWOOD = "belisaplumilla50_outline",
+    TALKINGFONT = "belisaplumilla_outline",
+    TALKINGFONT_HERMIT = "belisaplumilla_outline",
+    TALKINGFONT_TRADEIN = "belisaplumilla_outline",
+    TALKINGFONT_WORMWOOD = "belisaplumilla_outline",
 }
 
 local function RegisterFonts()
