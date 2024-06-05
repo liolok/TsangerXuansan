@@ -14,21 +14,21 @@ local assets = {}
 for _, v in pairs(fonts) do table.insert(assets, _G.Asset("FONT", MODROOT.."fonts/"..v..".zip")) end
 
 local replaces = {
-    TITLEFONT = "belisaplumilla_outline",
-    UIFONT = "belisaplumilla_outline",
-    BUTTONFONT = "bellefair",
-    NEWFONT = "spirequal",
-    NEWFONT_SMALL = "spirequal",
-    NEWFONT_OUTLINE = "spirequal_outline",
-    NEWFONT_OUTLINE_SMALL = "spirequal_outline",
-    HEADERFONT = "hammerhead",
-    BODYTEXTFONT = "stint_outline",
-    CHATFONT = "bellefair",
-    CHATFONT_OUTLINE = "bellefair_outline",
-    TALKINGFONT = "belisaplumilla_outline",
-    TALKINGFONT_HERMIT = "belisaplumilla_outline",
-    TALKINGFONT_TRADEIN = "belisaplumilla_outline",
-    TALKINGFONT_WORMWOOD = "belisaplumilla_outline",
+    TITLEFONT               = "belisaplumilla_outline",
+    UIFONT                  = "belisaplumilla_outline",
+    TALKINGFONT             = "belisaplumilla_outline",
+    TALKINGFONT_HERMIT      = "belisaplumilla_outline",
+    TALKINGFONT_TRADEIN     = "belisaplumilla_outline",
+    TALKINGFONT_WORMWOOD    = "belisaplumilla_outline",
+    CHATFONT_OUTLINE        = "bellefair_outline",
+    CHATFONT                = "bellefair",
+    BUTTONFONT              = "bellefair",
+    HEADERFONT              = "hammerhead",
+    NEWFONT_OUTLINE         = "spirequal_outline",
+    NEWFONT_OUTLINE_SMALL   = "spirequal_outline",
+    NEWFONT                 = "spirequal",
+    NEWFONT_SMALL           = "spirequal",
+    BODYTEXTFONT            = "stint_outline",
 }
 
 local function RegisterFonts()
