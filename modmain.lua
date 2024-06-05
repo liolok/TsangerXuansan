@@ -86,6 +86,11 @@ AddClassPostConstruct("widgets/controls", function(self)
     if self.seasonclock and self.seasonclock._text then self.seasonclock._text:SetSize(34 / ratio) end
 end)
 
+AddClassPostConstruct("widgets/itemtile", function(self)
+    if self.quantity then self.quantity:SetSize(44 / ratio) end
+    if self.percent then self.percent:SetSize(44 / ratio) end
+end)
+
 AddClassPostConstruct("widgets/ingredientui", function(self)
     if self.quant then self.quant:SetSize(25 / ratio) end
 end)
