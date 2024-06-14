@@ -7,16 +7,18 @@ local fonts = { -- 加入了苍耳玄三的原版字体列表
   'hammerhead',
   'spirequal_outline',
   'spirequal',
-  'stint_outline'
+  'stint_outline',
+  'sugarplum_outline',
+  'hennypenny_outline'
 }
 
 local replaces = { -- 字体替换列表
   TITLEFONT             = 'belisaplumilla_outline',
   UIFONT                = 'belisaplumilla_outline',
   TALKINGFONT           = 'belisaplumilla_outline',
-  TALKINGFONT_HERMIT    = 'belisaplumilla_outline',
+  TALKINGFONT_HERMIT    = 'sugarplum_outline',
   TALKINGFONT_TRADEIN   = 'belisaplumilla_outline',
-  TALKINGFONT_WORMWOOD  = 'belisaplumilla_outline',
+  TALKINGFONT_WORMWOOD  = 'hennypenny_outline',
   CHATFONT_OUTLINE      = 'bellefair_outline',
   CHATFONT              = 'bellefair',
   BUTTONFONT            = 'bellefair',
