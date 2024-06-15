@@ -49,12 +49,17 @@ local function RegisterFonts() -- 注册字体
   G.BODYTEXTFONT = 'stint_outline' -- stint-ucr
 end
 
+-- 插入字体注册函数
+local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
+G.Sim.UnregisterAllPrefabs = function(self, ...)
+  OldUnregisterAllPrefabs(self, ...)
+  RegisterFonts()
+end
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
 G.ModManager.RegisterPrefabs = function(...)
   OldRegisterPrefabs(...)
   RegisterFonts()
 end
-
 local OldStart = G.Start
 G.Start = function()
   RegisterFonts()
