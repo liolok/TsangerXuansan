@@ -27,9 +27,8 @@ local function RegisterFonts() -- 注册字体
   S:RegisterPrefab('tsanger_fonts', assets, {})
   S:LoadPrefabs({ 'tsanger_fonts' })
   for _, font in ipairs(fonts) do
-    local fallback = font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE
     S:LoadFont(file_path[font], font)
-    S:SetupFontFallbacks(font, fallback)
+    S:SetupFontFallbacks(font, font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE)
   end
   G.TITLEFONT = 'belisaplumilla_outline' -- bp100
   G.UIFONT = 'belisaplumilla_outline' -- bp50
