@@ -97,3 +97,5 @@ AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
 end)
+
+LoadPOFile(MODROOT .. 'chinese_s.po', 'zh') -- 加载字符串换行修复文件
