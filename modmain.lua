@@ -5,7 +5,7 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'bellefair_outline',
   'bellefair',
   'hammerhead',
-  'hennypenny_outline',
+  'hennypenny_outline', -- 沃姆伍德：中文部分使用仓耳青丘小九
   'spirequal_outline',
   'spirequal',
   'stint_outline',
