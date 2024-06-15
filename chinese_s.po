@@ -5,6 +5,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "POT Version: 2.0"
 
+###
+### 交易小店
+###
+
 #. STRINGS.UI.TRADESCREEN.CROWKID_GAME.HELP_BODY
 msgctxt "STRINGS.UI.TRADESCREEN.CROWKID_GAME.HELP_BODY"
 msgid "The Crows left a mess in the maze after last year's Cawnival. Move around the maze to pick up all of the leftover junk."
@@ -68,27 +72,27 @@ msgstr "这个地方到处都是 旧的鸦年华垃圾。 你愿意为我处理�
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.1
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.1"
 msgid "Eggcellent! That's worth {points} points!"
-msgstr "蛋的漂亮！ 共值{points}分！"
+msgstr "蛋的漂亮！ 共值 {points} 分！"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.2
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.2"
 msgid "Well done! Just the way I like my eggs. That's worth {points} points!"
-msgstr "精彩啊！ 蛋就得这么算。 共值 {points}分！"
+msgstr "精彩啊！ 蛋就得这么算。 共值 {points} 分！"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.3
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.3"
 msgid "So many mouths to feed, another egg will help. {points} points earned!"
-msgstr "有这么多张嘴需要喂饱， 多一颗蛋能帮上不小的忙。 总共赚到了{points}分！ "
+msgstr "有这么多张嘴需要喂饱， 多一颗蛋能帮上不小的忙。 总共赚到了{points}分！"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.4
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.4"
 msgid "Y'er brain is gettin' some eggsercise. I'll give ya {points} points."
-msgstr "你的大脑得到了一些训练。 我会给你{points}分。"
+msgstr "你的大脑得到了一些训练。 我会给你 {points} 分。"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.5
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE.5"
 msgid "That's worth {points} points! I need half-a-dozen eggs, think ya can get me more?"
-msgstr "这些值{points}分！ 我需要半打的鸟蛋， 你能再多给我点吗？"
+msgstr "这些值 {points} 分！ 我需要半打的鸟蛋， 你能再多给我点吗？"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE_ROTTEN.1
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.EGG_COMPLETE_ROTTEN.1"
@@ -163,7 +167,7 @@ msgstr "你拿鸟蛋的时候最好 快一点。要是坏掉了 我就用不了�
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.START.4
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.START.4"
 msgid "Use y'er noggin to add up numbers. Get to 100 exactly and a Redbird will lay an egg!"
-msgstr "开动脑筋做加法。 两两相加得到100之后， 红雀就会生下一颗蛋！"
+msgstr "开动脑筋做加法。 两两相加得到 100 之后， 红雀就会生下一颗蛋！"
 
 #. STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.START.5
 msgctxt "STRINGS.UI.TRADESCREEN.SKIN_COLLECTOR_SPEECH_REDBIRD.START.5"
@@ -179,3 +183,136 @@ msgstr "如果你把最后一件物品交出去，你将无法再穿戴它！\n�
 msgctxt "STRINGS.UI.TRADESCREEN.WARNING_SINGLE"
 msgid "You won't be able to wear an item if you give your last one away! Do you really want to trade this item?"
 msgstr "如果你把最后一件物品交出去，你将无法再穿戴它！\n你确定要把这件物品拿去交换吗？"
+
+#. STRINGS.UI.TRADESCREEN.SNOW_GAME.HELP_BODY
+msgctxt "STRINGS.UI.TRADESCREEN.SNOW_GAME.HELP_BODY"
+msgid "Match pairs of food tiles from the feast. Clearing a pair will cause the tiles above to drop down, so be sure to remember what foods were there. Matching a pair of snowbirds will grant you an extra guess.\n\nGood luck!"
+msgstr "配对盛宴的食物。\n成功清理后，上面的砖块会掉下来，一定要记住食物的位置。\n配对了雪雀后，会赢得1个额外的猜测次数。\n\n祝你好运！"
+
+###
+### 物品收藏 -> 珍宝柜 -> 衣柜 角色介绍
+###
+
+#. STRINGS.CHARACTER_ABOUTME.wilson
+msgctxt "STRINGS.CHARACTER_ABOUTME.wilson"
+msgid "At heart Wilson is truly a man of science. It's not in his nature to resist the call of the unknown."
+msgstr "威尔逊内心热爱科学。\n天性使他无法抗拒未知事物的召唤。"
+
+#. STRINGS.CHARACTER_ABOUTME.willow
+msgctxt "STRINGS.CHARACTER_ABOUTME.willow"
+msgid "Willow is a candid woman whose penchant for fire often gets her into more than a little trouble."
+msgstr "薇洛是个直率的女子，\n对火的迷恋常常给她惹来不少麻烦。"
+
+#. STRINGS.CHARACTER_ABOUTME.wolfgang
+msgctxt "STRINGS.CHARACTER_ABOUTME.wolfgang"
+msgid "Wolfgang is an affable, musclebound giant with a heart plagued by a myriad of phobias."
+msgstr "沃尔夫冈是个和蔼、\n肌肉发达的大个子，\n他的心深受各种恐惧症的困扰。"
+
+#. STRINGS.CHARACTER_ABOUTME.wendy
+msgctxt "STRINGS.CHARACTER_ABOUTME.wendy"
+msgid "Wendy is a morose young lady with a sisterly bond so powerful, it transcends death itself."
+msgstr "温蒂是个郁郁寡欢的姑娘，\n与孪生姐妹之间的\n羁绊强大到超越死亡。"
+
+#. STRINGS.CHARACTER_ABOUTME.wx78
+msgctxt "STRINGS.CHARACTER_ABOUTME.wx78"
+msgid "One might assume WX's callous nature hides a sensitive inner soul. One would assume incorrectly."
+msgstr "别人可能猜想 WX\n冷酷无情的外表下隐藏着\n敏感的内心。这样猜就错了。"
+
+#. STRINGS.CHARACTER_ABOUTME.wickerbottom
+msgctxt "STRINGS.CHARACTER_ABOUTME.wickerbottom"
+msgid "A woman of curious mind and stern air, Wickerbottom thrives on the lifelong pursuit of knowledge."
+msgstr "薇克巴顿是一位有好奇心和\n严肃气质的女性，毕生追求知识。"
+
+#. STRINGS.CHARACTER_ABOUTME.woodie
+msgctxt "STRINGS.CHARACTER_ABOUTME.woodie"
+msgid "A gruff, bearded woodsman, Woodie has a soft spot for nature, plaid, and his trusty axe, Lucy."
+msgstr "伐木工人伍迪是个\n蓄着胡子的糙汉子，\n他热爱大自然、格子衬衫\n和他信赖的斧头露西。"
+
+#. STRINGS.CHARACTER_ABOUTME.wes
+msgctxt "STRINGS.CHARACTER_ABOUTME.wes"
+msgid "Wes is a mime of many thoughts, but few words."
+msgstr "韦斯是个想法很多\n但话语很少的哑剧演员。"
+
+#. STRINGS.CHARACTER_ABOUTME.waxwell
+msgctxt "STRINGS.CHARACTER_ABOUTME.waxwell"
+msgid "Formerly the Nightmare King, lately Maxwell finds himself reacquainted with life among the commonfolk."
+msgstr "曾经的梦魇之王，\n也就是现在的麦斯威尔，\n渐渐重新熟悉了平民生活。"
+
+#. STRINGS.CHARACTER_ABOUTME.wathgrithr
+msgctxt "STRINGS.CHARACTER_ABOUTME.wathgrithr"
+msgid "Whoever Wigfrid was before her titular role has been lost to time, and the power of method acting."
+msgstr "无论薇格弗德以前是什么，\n都因时间的冲刷和她精湛\n的演技而不见踪迹了。"
+
+#. STRINGS.CHARACTER_ABOUTME.webber
+msgctxt "STRINGS.CHARACTER_ABOUTME.webber"
+msgid "Webber is a polite young monster who cares deeply for all his friends, human or otherwise."
+msgstr "韦伯是个彬彬有礼的小怪物，\n他深切关心自己的人类朋友\n和非人类朋友。"
+
+#. STRINGS.CHARACTER_ABOUTME.winona
+msgctxt "STRINGS.CHARACTER_ABOUTME.winona"
+msgid "Winona is a former assembly line worker with a boisterous attitude and love of all things mechanical."
+msgstr "薇诺娜曾经是装配流水线工人，\n她热爱一切和机械有关的事物。"
+
+#. STRINGS.CHARACTER_ABOUTME.warly
+msgctxt "STRINGS.CHARACTER_ABOUTME.warly"
+msgid "To Warly, cooking is a language through which to express love and gratitude to those he holds dear."
+msgstr "沃利认为，烹饪是对亲密的人\n表达爱和感激的语言。"
+
+#. STRINGS.CHARACTER_ABOUTME.wortox
+msgctxt "STRINGS.CHARACTER_ABOUTME.wortox"
+msgid "Wortox is a mischievous imp whose levity masks a deep well of guilt. He has taken many souls in his time."
+msgstr "沃拓克斯是一个顽皮的恶魔。\n他的轻浮只是为了\n掩饰内心的罪恶感，\n因为他被迫吞噬了许多灵魂。"
+
+#. STRINGS.CHARACTER_ABOUTME.wormwood
+msgctxt "STRINGS.CHARACTER_ABOUTME.wormwood"
+msgid "An amalgam of vines given sentience by lunar magic, Wormwood searches for friends so he can finally belong."
+msgstr "月之魔力让蔓藤植物的混合体\n有了知觉，变成了沃姆伍德。\n他寻找朋友，寻找归属感。"
+
+#. STRINGS.CHARACTER_ABOUTME.wurt
+msgctxt "STRINGS.CHARACTER_ABOUTME.wurt"
+msgid "Wurt is a curious young Merm trying to expand her horizons... as long as those horizons don't extend into Pig territory."
+msgstr "沃特是一名年轻好奇的鱼人，\n她努力拓宽自己的视野......\n但不包括猪人的领土。"
+
+#. STRINGS.CHARACTER_ABOUTME.walter
+msgctxt "STRINGS.CHARACTER_ABOUTME.walter"
+msgid "Walter is an odd but cheerful boy, whose ability to assess danger leaves something to be desired."
+msgstr "沃尔特是一个古怪但开朗的男孩，\n他对危险的评估能力还有待提高。"
+
+#. STRINGS.CHARACTER_ABOUTME.wanda
+msgctxt "STRINGS.CHARACTER_ABOUTME.wanda"
+msgid "Wanda is a skilled clockmaker who will stop at nothing to outrun her future."
+msgstr "旺达是一个熟练的钟表匠，\n她将不惜一切代价来跑赢她的未来。"
+
+#. STRINGS.CHARACTER_ABOUTME.wonkey
+msgctxt "STRINGS.CHARACTER_ABOUTME.wonkey"
+msgid "This poor soul has fallen victim to the curse of the dreaded Moon Quay pirates."
+msgstr "这个可怜的灵魂已经沦为了\n月亮码头可怕的海盗诅咒的受害者。"
+
+###
+### 弹出对话框
+###
+
+#. STRINGS.UI.START_SHADOW_RIFTS.BODY
+msgctxt "STRINGS.UI.START_SHADOW_RIFTS.BODY"
+msgid "Be warned, assisting the Shadow Queen will alter your world and cannot be undone. Beautiful, terrible things will rise to the surface.\n\nAre you sure you'd like to continue?"
+msgstr "请注意，协助暗影女王将改变你的世界，并且无法挽回。\n美丽而可怕的事情将会浮出水面。\n\n您确定要继续吗？"
+
+#. STRINGS.UI.START_LUNAR_RIFTS.BODY
+msgctxt "STRINGS.UI.START_LUNAR_RIFTS.BODY"
+msgid "Be warned, assisting the Cryptic Founder will alter your world and cannot be undone. Much will be lost and gained in the name of Progress.\n\nAre you sure you'd like to continue?"
+msgstr "请注意，协助神秘创始人将改变你的世界，并且无法挽回。\n以进步的名义将会失去和获得很多东西。\n\n您确定要继续吗？"
+
+#. STRINGS.UI.PAUSEMENU.HOSTQUITBODY
+msgctxt "STRINGS.UI.PAUSEMENU.HOSTQUITBODY"
+msgid "Are you sure you want to shut down the server? If you do, all current players will be disconnected."
+msgstr "你确定想要关闭服务器吗？\n是的话，现在所有的玩家会断开连接。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.PAUSEDWARNING_BODY
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.PAUSEDWARNING_BODY"
+msgid "Are you sure you want to join a paused world? You will not be able to play until the server is unpaused."
+msgstr "你确定要加入暂停的世界吗？\n在服务器取消暂停前，你将无法游戏。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.MOD_WARNING_BODY
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.MOD_WARNING_BODY"
+msgid "This server has mods enabled. Klei won't be able to help if you encounter issues while playing on a modded server."
+msgstr "此服务器已启用模组。\n在启用模组服务器上打游戏时，如果您遇到问题，Klei 无法提供帮助。"
