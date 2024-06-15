@@ -2,17 +2,17 @@ name = '中文字体：苍耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
 version = '2024.06.04.1'
 description = [[
-󰀏 制作栏物品的皮肤名称字体的解决方案：
+󰀏 制作目录皮肤名称字体的替换方案：
 
-(1) 在 Steam 游戏库右键饥荒联机版 -> 管理 -> 本地文件 -> 浏览本地文件，打开游戏目录。然后打开：
-".\data\databundles\fonts.zip"
+(1) 在 Steam 库右键饥荒联机版 -> 管理 -> 浏览本地文件。
 
-(2) 打开本模组所在目录：
-"X:\Steam\steamapps\workshop\content\322330\XXXXXXXXX\fonts\"
+(2) 编辑游戏内置字体压缩包：".\data\databundles\fonts.zip"
 
-(3) 从模组复制 "fallback_full_outline_packed.zip" 并替换游戏本体的对应文件。
+(3) 模组目录："..\..\workshop\content\322330\3264922393\"
 
-(4) 重启游戏
+(4) 复制 "fallback_full_outline_packed.zip" 并替换掉游戏内置字体压缩包里的同名文件。
+
+(5) 重启游戏（游戏版本更新后，需要再次进行替换。）
 ]]
 api_version = 10
 priority = -2022
