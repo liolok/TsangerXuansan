@@ -1,6 +1,6 @@
-local G = GLOBAL
+local G, S = GLOBAL, GLOBAL.TheSim
 
-local fonts = { -- 加入了苍耳玄三的原版字体列表
+local fonts = { -- 加入了中文字体的原版字体列表
   'belisaplumilla_outline',
   'bellefair_outline',
   'bellefair',
@@ -9,50 +9,45 @@ local fonts = { -- 加入了苍耳玄三的原版字体列表
   'spirequal_outline',
   'spirequal',
   'stint_outline',
-  'sugarplum_outline',
+  'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
 }
 
--- stylua: ignore
-local replaces = { -- 字体替换列表
-  TITLEFONT             = 'belisaplumilla_outline',
-  UIFONT                = 'belisaplumilla_outline',
-  TALKINGFONT           = 'belisaplumilla_outline',
-  TALKINGFONT_TRADEIN   = 'belisaplumilla_outline',
-  CHATFONT_OUTLINE      = 'bellefair_outline',
-  CHATFONT              = 'bellefair',
-  BUTTONFONT            = 'bellefair',
-  HEADERFONT            = 'hammerhead',
-  TALKINGFONT_WORMWOOD  = 'hennypenny_outline', -- 沃姆伍德（植物人）
-  NEWFONT_OUTLINE       = 'spirequal_outline',
-  NEWFONT_OUTLINE_SMALL = 'spirequal_outline',
-  NEWFONT               = 'spirequal',
-  NEWFONT_SMALL         = 'spirequal',
-  BODYTEXTFONT          = 'stint_outline',
-  NUMBERFONT            = 'stint_outline',
-  SMALLNUMBERFONT       = 'stint_outline',
-  TALKINGFONT_HERMIT    = 'sugarplum_outline', -- 寄居蟹隐士
-}
-
-local assets = {} -- 资源文件列表
-for _, font in pairs(fonts) do
-  table.insert(assets, Asset('FONT', MODROOT .. 'fonts/' .. font .. '.zip'))
+local file_path = {} -- 文件路径列表
+local assets = {} -- 资源列表
+for _, font in ipairs(fonts) do
+  file_path[font] = MODROOT .. 'fonts/' .. font .. '.zip'
+  table.insert(assets, Asset('FONT', file_path[font]))
 end
 
 local function RegisterFonts() -- 注册字体
-  for _, font in pairs(fonts) do
-    G.TheSim:UnloadFont(font)
+  for _, font in ipairs(fonts) do
+    S:UnloadFont(font)
   end
-  G.TheSim:UnloadPrefabs({ 'tsanger_xuansan' })
-  G.TheSim:RegisterPrefab('tsanger_xuansan', assets, {})
-  G.TheSim:LoadPrefabs({ 'tsanger_xuansan' })
-  for _, font in pairs(fonts) do
+  S:UnloadPrefabs({ 'tsanger_fonts' })
+  S:RegisterPrefab('tsanger_fonts', assets, {})
+  S:LoadPrefabs({ 'tsanger_fonts' })
+  for _, font in ipairs(fonts) do
     local fallback = font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE
-    G.TheSim:LoadFont(MODROOT .. 'fonts/' .. font .. '.zip', font)
-    G.TheSim:SetupFontFallbacks(font, fallback)
+    S:LoadFont(file_path[font], font)
+    S:SetupFontFallbacks(font, fallback)
   end
-  for FONT, font in pairs(replaces) do
-    G[FONT] = font
-  end
+  G.TITLEFONT = 'belisaplumilla_outline' -- bp100
+  G.UIFONT = 'belisaplumilla_outline' -- bp50
+  G.BUTTONFONT = 'bellefair' -- buttonfont
+  G.NEWFONT = 'spirequal'
+  G.NEWFONT_SMALL = 'spirequal' -- spirequal_small
+  G.NEWFONT_OUTLINE = 'spirequal_outline'
+  G.NEWFONT_OUTLINE_SMALL = 'spirequal_outline' -- spirequal_outline_small
+  G.NUMBERFONT = 'stint_outline' -- stint-ucr
+  G.TALKINGFONT = 'belisaplumilla_outline' -- talkingfont
+  G.TALKINGFONT_WORMWOOD = 'hennypenny_outline'
+  G.TALKINGFONT_TRADEIN = 'belisaplumilla_outline'
+  G.TALKINGFONT_HERMIT = 'sugarplum_outline'
+  G.CHATFONT = 'bellefair'
+  G.HEADERFONT = 'hammerhead'
+  G.CHATFONT_OUTLINE = 'bellefair_outline'
+  G.SMALLNUMBERFONT = 'stint_outline' -- stint-small
+  G.BODYTEXTFONT = 'stint_outline' -- stint-ucr
 end
 
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
