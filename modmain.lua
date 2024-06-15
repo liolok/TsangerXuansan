@@ -30,6 +30,7 @@ local function RegisterFonts() -- 注册字体
     S:LoadFont(file_path[font], font)
     S:SetupFontFallbacks(font, font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE)
   end
+  G.DEFAULTFONT = 'stint_outline' -- opensans
   G.TITLEFONT = 'belisaplumilla_outline' -- bp100
   G.UIFONT = 'belisaplumilla_outline' -- bp50
   G.BUTTONFONT = 'bellefair' -- buttonfont
