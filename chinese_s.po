@@ -316,3 +316,8 @@ msgstr "你确定要加入暂停的世界吗？\n在服务器取消暂停前，�
 msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.MOD_WARNING_BODY"
 msgid "This server has mods enabled. Klei won't be able to help if you encounter issues while playing on a modded server."
 msgstr "此服务器已启用模组。\n在启用模组服务器上打游戏时，如果您遇到问题，Klei 无法提供帮助。"
+
+#. STRINGS.UI.OPTIONS.RESTART_TEXTURE_STREAMING_BODY
+msgctxt "STRINGS.UI.OPTIONS.RESTART_TEXTURE_STREAMING_BODY"
+msgid "For Texture Streaming changes to take effect, you will have to exit and restart the game."
+msgstr "需要退出当前游戏、重新启动游戏后，\n动态加载贴图才能生效。"
