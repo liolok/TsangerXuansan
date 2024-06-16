@@ -321,3 +321,8 @@ msgstr "此服务器已启用模组。\n在启用模组服务器上打游戏时�
 msgctxt "STRINGS.UI.OPTIONS.RESTART_TEXTURE_STREAMING_BODY"
 msgid "For Texture Streaming changes to take effect, you will have to exit and restart the game."
 msgstr "需要退出当前游戏、重新启动游戏后，\n动态加载贴图才能生效。"
+
+#. STRINGS.UI.REDEEMDIALOG.LEGALESE
+msgctxt "STRINGS.UI.REDEEMDIALOG.LEGALESE"
+msgid "Delivery time may vary due to temporal portal anomalies. Wilson is not responsible for emotional injuries caused by waiting. Gifts may result in bragging, unexpected delight, and/or enhanced gameplay experiences."
+msgstr "鉴于传送门的异常现象，交付时间可能有所异同。\n威尔逊不对等待造成的情绪伤害负责。\n你获得的礼物可能会很赞、出人意料\n或能改善你的游戏体验。"
