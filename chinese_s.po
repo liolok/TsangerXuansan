@@ -177,12 +177,12 @@ msgstr "数数是我的专长。 让我们看看你能做到多好。"
 #. STRINGS.UI.TRADESCREEN.WARNING
 msgctxt "STRINGS.UI.TRADESCREEN.WARNING"
 msgid "You won't be able to wear an item if you give your last one away! Do you really want to trade these items?"
-msgstr "如果你把最后一件物品交出去，你将无法再穿戴它！\n你确定要把这些物品拿去交换吗？"
+msgstr "如果你把最后一件物品交出去，\n你将无法再穿戴它！你确定要\n把这些物品拿去交换吗？"
 
 #. STRINGS.UI.TRADESCREEN.WARNING_SINGLE
 msgctxt "STRINGS.UI.TRADESCREEN.WARNING_SINGLE"
 msgid "You won't be able to wear an item if you give your last one away! Do you really want to trade this item?"
-msgstr "如果你把最后一件物品交出去，你将无法再穿戴它！\n你确定要把这件物品拿去交换吗？"
+msgstr "如果你把最后一件物品交出去，\n你将无法再穿戴它！你确定要\n把这些物品拿去交换吗？"
 
 #. STRINGS.UI.TRADESCREEN.SNOW_GAME.HELP_BODY
 msgctxt "STRINGS.UI.TRADESCREEN.SNOW_GAME.HELP_BODY"
