@@ -1,0 +1,32 @@
+[h2]这是一个中文字体模组，它本质上是一种美化包，不会更改任何游戏内容！[/h2]
+
+基于原版的英文和数字字体加入：
+
+[list]
+    [*][url=http://tsanger.cn/product/18]仓耳玄三 03-W03[/url]：几乎全部覆盖
+    [*][url=http://tsanger.cn/product/23]仓耳瓜藤体[/url]：寄居蟹隐士的台词字体
+    [*][url=http://tsanger.cn/product/330]仓耳青丘小九[/url]：沃姆伍德的台词字体
+[/list]
+
+另外，我们在一定程度上提高了字体分辨率，使其在高分辨率的显示器上也可以[strike]较为[/strike]清晰的显示。
+
+[spoiler]本来我们是打算制作更加高清的字体，然而这么做会导致在一些较低分辨率（指最常规的 1920x1080）的屏幕上出现显示问题，因此只能制作“较为”清晰的字体了。[/spoiler]
+
+[h2]致谢[/h2]
+
+[list]
+    [*]幽晚枫乐：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2771766820]仓耳玄三字体模组[/url]，以及其它字体模组的原作者们。
+    [*]dreamofcoffee：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3219288478]修复交易小店空白语句模组[/url]
+    [*]李皓奇：代码编辑、协助测试。
+[/list]
+[strike]没错我只参与了字体设计和贴图转化，代码方面是一点没动（ [/strike]
+
+[h2]已知问题[/h2]
+
+[list]
+    [*]禁用本模组并点击应用后，游戏重启会立即闪退。[spoiler]并且会禁用全部模组 :([/spoiler]
+[/list]
+
+[hr][/hr]
+
+[url=https://github.com/liolok/TsangerXuansan]源码[/url]
