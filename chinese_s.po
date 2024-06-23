@@ -331,3 +331,128 @@ msgstr "鉴于传送门的异常现象，交付时间可能有所异同。\n威�
 msgctxt "STRINGS.UI.NETWORKDISCONNECT.BODY.SERVER_MODS_WORKSHOP_VERSION_MISMATCH"
 msgid "The server is running mods with an old version. The server owner must update the mods for new players to join."
 msgstr "服务器正在运行旧版本模组。\n服务器所有者必须更新模组，才能让新的玩家加入。"
+
+#. STRINGS.UI.SERVERADMINSCREEN.RESTORE_SNAPSHOT_BODY
+msgctxt "STRINGS.UI.SERVERADMINSCREEN.RESTORE_SNAPSHOT_BODY"
+msgid "Do you want to restore this save? You will lose all changes made to the world past the selected day, as well as all subsequent saves. This cannot be undone."
+msgstr "恢复这个存档？\n你会丢失选定日期后对世界的\n全部更改以及所有后续存档。\n此操作无法撤销。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.FULLSLOTSBODY
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.FULLSLOTSBODY"
+msgid "All of your server slots are currently full. You must either select a slot to load from, or delete a slot and start a new world."
+msgstr "你所有的服务器存档栏现在已满。\n你得选择从中加载的存档栏，\n或者删除一个存档栏并且开启新世界。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.INVALIDNEWHOST_BODY
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.INVALIDNEWHOST_BODY"
+msgid "We recommend trying the game alone in a private world while you learn the ropes and get the hang of not starving. But it's totally up to you!"
+msgstr "我们建议您单独在私密世界里试玩下这个游戏，\n学习游戏玩法并掌握生存诀窍。但是这完全由你决定！"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYCREATE
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYCREATE"
+msgid "Are you sure you want to create an offline world? This is a limited mode where only players on your Local Area Network can join. Players will not be able to receive or use Collection Items in this world."
+msgstr "你确定想创建一个离线世界？\n这是有限模式，在这个模式下\n只有你局域网上的玩家可以加入。\n玩家无法接收或使用这个世界的收藏物品。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYCREATE_CANSKIN
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYCREATE_CANSKIN"
+msgid "Are you sure you want to create an offline world? This is a limited mode where only players on your Local Area Network can join."
+msgstr "你确定想创建一个离线世界？\n这是有限模式，在这个模式下\n只有你局域网上的玩家可以加入。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYRESUME
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYRESUME"
+msgid "You are resuming an offline world. Only users on your Local Area Network will be able to join this world. Players will not be able to receive or use Collection Items in this world."
+msgstr "你现在回到离线世界。\n只有局域网的用户能够加入这个世界。\n玩家无法接收或使用这个世界的收藏物品。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYRESUME_CANSKIN
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.OFFLINEMODEBODYRESUME_CANSKIN"
+msgid "You are resuming an offline world. Only users on your Local Area Network will be able to join this world."
+msgstr "你正在恢复一个离线世界。\n只有你局域网上的玩家可以加入游戏。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY"
+msgid "You can only resume an online world when you have a connection to Steam and Klei. Please log in and try again."
+msgstr "只有连接到 Steam 和科雷\n服务器的时候才能回到联机世界。\n请登录并再试一次。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_PS4
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_PS4"
+msgid "You are currently in offline mode and cannot resume an online world. Please log in and try again."
+msgstr "您当前处于离线模式，无法进入在线世界。\n请登录并再次尝试。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_RAIL
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_RAIL"
+msgid "You can only resume an online world when you have a connection to the game servers. Please log in and try again."
+msgstr "只有连接到游戏服务器时才能恢复这个世界。\n请你检查你的网络，然后再试一次。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_SPLITSCREEN
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.ONLINEONLYBODY_SPLITSCREEN"
+msgid "You are currently in offline mode and cannot resume an online world. Please log in and try again."
+msgstr "您当前处于离线模式，无法进入在线世界。\n请登录并再次尝试。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.CLIENT_MODS_DISABLED_BODY
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.CLIENT_MODS_DISABLED_BODY"
+msgid "Your client mods will be temporarily disabled while playing on this server."
+msgstr "在这个服务器上玩游戏时，\n你的客户端模组将暂时被禁用。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.OFFLINEMODEBODYJOIN
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.OFFLINEMODEBODYJOIN"
+msgid "Are you sure you want to join an offline world? You will not be able to receive or use Collection Items in this world."
+msgstr "确定加入离线世界？\n您将无法收到或使用此世界中的收藏物品。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.PAUSEDWARNING_BODY
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.PAUSEDWARNING_BODY"
+msgid "Are you sure you want to join a paused world? You will not be able to play until the server is unpaused."
+msgstr "你确定要加入暂停的世界吗？\n在服务器取消暂停前，你将无法游戏。"
+
+#. STRINGS.UI.SERVERLISTINGSCREEN.SERVER_LANGUAGE_WARNING_BODY
+msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.SERVER_LANGUAGE_WARNING_BODY"
+msgid "Your language option doesn't match the language set by this server, do want to join anyways?"
+msgstr "你的语言选项与此服务器设置的\n语言不匹配，是否仍然要加入？"
+
+#. STRINGS.UI.BUGREPORTSCREEN.SUBMIT_DIALOG_BODY
+msgctxt "STRINGS.UI.BUGREPORTSCREEN.SUBMIT_DIALOG_BODY"
+msgid "Submitting a bug report will upload your game information and saved worlds to Klei to help us analyze the issue.\n\nThis may take several minutes."
+msgstr "提交错误报告会向科雷公司\n上传你的游戏信息和存储的世界，\n以帮助我们分析问题。\n\n整个过程可能需要几分钟。"
+
+#. STRINGS.UI.BOX_POPUP.SERVER_ERROR_BODY
+msgctxt "STRINGS.UI.BOX_POPUP.SERVER_ERROR_BODY"
+msgid "There was an error while opening your Chest. Please log in again to refresh your account inventory."
+msgstr "打开你的箱子时发生了一个错误。\n请重新登录，刷新您的账户库存。"
+
+#. STRINGS.UI.BOX_POPUP.SERVER_NO_ITEM_BODY
+msgctxt "STRINGS.UI.BOX_POPUP.SERVER_NO_ITEM_BODY"
+msgid "This Chest contained items that are not supported by your current game version. Please exit and update your game."
+msgstr "这个箱子里包含你当前游戏版本\n不支持的物品。请退出并更新你的游戏。"
+
+#. STRINGS.UI.FESTIVALEVENTSCREEN.HOST_NO_SERVERS_BODY
+msgctxt "STRINGS.UI.FESTIVALEVENTSCREEN.HOST_NO_SERVERS_BODY"
+msgid "No servers are currently available for your game version. Please update and try again."
+msgstr "目前没有可用的服务器适合\n你的游戏版本。请更新后重试。"
+
+#. STRINGS.UI.LOBBYSCREEN.UNOWNED_CHARACTER_BODY
+msgctxt "STRINGS.UI.LOBBYSCREEN.UNOWNED_CHARACTER_BODY"
+msgid "You have not yet unlocked {character}.\nTo play this character, you must either weave them using Spools, or purchase them from the Shop."
+msgstr "你尚未拥有{character}。\n你可以用线轴编织人物，也可以从商城购买。"
+
+#. STRINGS.UI.MAINSCREEN.BAD_HASHES_BODY
+msgctxt "STRINGS.UI.MAINSCREEN.BAD_HASHES_BODY"
+msgid "Your game data files look corrupted. We recommend that you run your platform's file validation routines."
+msgstr "你的游戏数据文件似乎已经损坏。\n我们建议你运行所在平台的文件验证程序。"
+
+#. STRINGS.UI.MAINSCREEN.FAILED_INVENTORY_BODY
+msgctxt "STRINGS.UI.MAINSCREEN.FAILED_INVENTORY_BODY"
+msgid "Unfortunately your Item Collection failed to complete downloading. Would you like to continue without your collection?"
+msgstr "下载物品收藏失败。\n是否要在没有物品收藏的情况下继续？"
+
+#. STRINGS.UI.MAINSCREEN.NEWUSER_DETECTED_BODY
+msgctxt "STRINGS.UI.MAINSCREEN.NEWUSER_DETECTED_BODY"
+msgid "You might want to explore on your own for a bit and get a feel for things. Would you like to host your own private game first?"
+msgstr "你可能有点想要自己探索并且要切身体验下。\n你想先创建自己的私人游戏吗？"
+
+#. STRINGS.UI.MAINSCREEN.VERSION_OUT_OF_DATE_BODY
+msgctxt "STRINGS.UI.MAINSCREEN.VERSION_OUT_OF_DATE_BODY"
+msgid "Your game looks like it's running an old version. We recommend that you update to the latest version."
+msgstr "你的游戏看起来是旧版本。\n我们建议你更新到最新的版本。"
+
+#. STRINGS.UI.MODSSCREEN.CLEANALL_BODY
+msgctxt "STRINGS.UI.MODSSCREEN.CLEANALL_BODY"
+msgid "Are you sure you want to clean your local Workshop data?\nThis will result in a full download of all your subscribed mods, and your mod configuration settings being reset."
+msgstr "你确定想清理你本地创意工坊的数据吗？\n这样将全部下载你订用的所有模组，\n并且重设下你的模组配置。"
