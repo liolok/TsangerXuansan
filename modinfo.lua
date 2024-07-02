@@ -1,6 +1,6 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-version = '2024.06.27.1'
+version = '2024.07.02.1'
 description = [[
 󰀏 制作目录皮肤名称字体替换方案：
 
