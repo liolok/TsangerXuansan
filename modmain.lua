@@ -70,7 +70,7 @@ end
 -- 缩放倍率
 local ratio = GetModConfigData('font_scale_ratio')
 G.LOC.GetTextScale = function() -- 仅对客户端语言为简体中文的情况调整缩放
-  return (G.LANGUAGE.CHINESE_S == G.LOC.CurrentLocale.id) and ratio or G.LOC.CurrentLocale.scale
+  return (G.LOC.GetLocaleCode() == 'zh') and ratio or G.LOC.CurrentLocale and G.LOC.CurrentLocale.scale or 1.0
 end
 
 -- 细节微调
