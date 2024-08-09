@@ -1,4 +1,4 @@
-local G, S = GLOBAL, GLOBAL.TheSim
+local G = GLOBAL
 
 local fonts = { -- 加入了中文字体的原版字体列表
   'belisaplumilla_outline',
@@ -13,23 +13,17 @@ local fonts = { -- 加入了中文字体的原版字体列表
 }
 
 local file_path = {} -- 文件路径列表
-local assets = {} -- 资源列表
+Assets = {} -- 资源列表
 for _, font in ipairs(fonts) do
   file_path[font] = MODROOT .. 'fonts/' .. font .. '.zip'
-  table.insert(assets, Asset('FONT', file_path[font]))
+  table.insert(Assets, Asset('FONT', file_path[font]))
 end
 
 local function RegisterFonts() -- 注册字体
   for _, font in ipairs(fonts) do
-    S:UnloadFont(font)
+    table.insert(G.FONTS, { filename = file_path[font], alias = font, fallback = font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE })
   end
-  S:UnloadPrefabs({ 'tsanger_fonts' })
-  S:RegisterPrefab('tsanger_fonts', assets, {})
-  S:LoadPrefabs({ 'tsanger_fonts' })
-  for _, font in ipairs(fonts) do
-    S:LoadFont(file_path[font], font)
-    S:SetupFontFallbacks(font, font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE)
-  end
+  G.LoadFonts()
   G.DEFAULTFONT = 'stint_outline' -- opensans
   G.TITLEFONT = 'belisaplumilla_outline' -- bp100
   G.UIFONT = 'belisaplumilla_outline' -- bp50
@@ -51,21 +45,7 @@ local function RegisterFonts() -- 注册字体
 end
 
 -- 插入字体注册函数
-local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
-G.Sim.UnregisterAllPrefabs = function(self, ...)
-  OldUnregisterAllPrefabs(self, ...)
-  RegisterFonts()
-end
-local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
-G.ModManager.RegisterPrefabs = function(...)
-  OldRegisterPrefabs(...)
-  RegisterFonts()
-end
-local OldStart = G.Start
-G.Start = function()
-  RegisterFonts()
-  OldStart()
-end
+AddSimPostInit(RegisterFonts)
 
 -- 缩放倍率
 local ratio = GetModConfigData('font_scale_ratio')
