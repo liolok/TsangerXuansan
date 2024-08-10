@@ -10,6 +10,7 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'spirequal',
   'stint_outline',
   'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
+  'belisaplumilla_outline', -- 防止寄居蟹字体和常用字体错乱
 }
 
 -- stylua: ignore
