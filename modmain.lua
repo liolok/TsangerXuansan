@@ -93,4 +93,4 @@ AddClassPostConstruct('widgets/redux/craftingmenu_skinselector', function(self)
   if self.spinner and self.spinner.text then self.spinner.text:SetFont(G.BODYTEXTFONT) end
 end)
 
-LoadPOFile(MODROOT .. 'chinese_s.po', 'zh') -- 加载字符串换行修复文件
+LoadPOFile(MODROOT .. 'chinese_s_patch.po', 'zh') -- 加载字符串换行修复文件
