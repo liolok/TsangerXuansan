@@ -83,7 +83,7 @@ G.LOC.GetTextScale = function() -- 仅对客户端语言为简体中文的情况
   return (G.LOC.GetLocaleCode() == 'zh') and ratio or G.LOC.CurrentLocale and G.LOC.CurrentLocale.scale or 1.0
 end
 
--- 细节微调
+-- 调整字号
 AddClassPostConstruct('widgets/controls', function(self)
   if self.seasonclock and self.seasonclock._text then self.seasonclock._text:SetSize(34 / ratio) end
 end)
@@ -97,8 +97,23 @@ AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
 end)
+
+-- 补全覆盖
 AddClassPostConstruct('widgets/redux/craftingmenu_skinselector', function(self)
   if self.spinner and self.spinner.text then self.spinner.text:SetFont(G.BODYTEXTFONT) end
 end)
+AddClassPostConstruct('widgets/redux/serversettingstab', function(self) -- 创建世界 > 设置标签页
+  for _, buttonwidget in ipairs(self.privacy_type.buttons.buttonwidgets) do
+    buttonwidget.button:SetFont(G.NEWFONT)
+  end
+end)
+AddClassPostConstruct('screens/imagepopupdialog', function(self) -- 只有交易小店的警告在用这个弹窗
+  self.title:SetFont(G.TITLEFONT)
+  self.title:SetColour(G.unpack(G.WHITE))
+  self.text:SetFont(G.BODYTEXTFONT)
+  self.text:SetSize(26 / ratio)
+  self.text:SetColour(G.unpack(G.WHITE))
+end)
 
-LoadPOFile(MODROOT .. 'chinese_s_patch.po', 'zh') -- 加载字符串换行修复文件
+-- 加载字符串换行修复文件
+LoadPOFile(MODROOT .. 'chinese_s_patch.po', 'zh')
