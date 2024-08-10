@@ -26,7 +26,7 @@ local function RegisterFonts() -- 注册字体
   for _, font in ipairs(fonts) do
     G.TheSim:UnloadFont('tsanger_' .. font)
   end
-  G.TheSim:UnloadPrefabs({ 'tsanger_fonts' })
+  G.TheSim:UnregisterPrefabs({ 'tsanger_fonts' })
   G.TheSim:RegisterPrefab('tsanger_fonts', Assets, {})
   G.TheSim:LoadPrefabs({ 'tsanger_fonts' })
   for _, font in ipairs(fonts) do
