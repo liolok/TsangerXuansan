@@ -20,18 +20,11 @@
 [*]dreamofcoffee：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3219288478]修复交易小店空白语句[/url]、制作菜单皮肤名称字体覆盖
 
 [*]所有其它字体模组的作者们
-    
+
 [*]李皓奇：代码编辑、协助测试
 [/list]
 
 [strike]没错我只参与了字体设计和贴图转化，代码方面是一点没动（ [/strike]
-
-[h2]已知问题[/h2]
-[list]
-[*]当你在交易小店用最后一个皮肤交易时，弹出窗口的标题“警告！”仍为游戏原版字体。
-
-[*]禁用本模组并点击应用后，游戏可能闪退。[spoiler]并且会禁用全部模组 :([/spoiler]
-[/list]
 
 [hr][/hr]
 
