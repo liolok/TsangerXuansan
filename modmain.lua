@@ -76,16 +76,6 @@ G.LOC.GetTextScale = function() -- 仅对客户端语言为简体中文的情况
 end
 
 -- 细节微调
-AddClassPostConstruct('screens/pausescreen', function(self)
-  if self.subtitle then self.subtitle:SetSize(24) end
-end)
-AddClassPostConstruct('screens/redeemdialog', function(self)
-  if self.fineprint then self.fineprint:SetSize(24) end
-end)
-AddClassPostConstruct('widgets/badge', function(self)
-  if self.num then self.num:SetSize(24 / ratio) end
-  if self.maxnum then self.maxnum:SetSize(20 / ratio) end
-end)
 AddClassPostConstruct('widgets/controls', function(self)
   if self.seasonclock and self.seasonclock._text then self.seasonclock._text:SetSize(34 / ratio) end
 end)
@@ -98,6 +88,9 @@ end)
 AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
+end)
+AddClassPostConstruct('widgets/redux/craftingmenu_skinselector', function(self)
+  if self.spinner and self.spinner.text then self.spinner.text:SetFont(G.BODYTEXTFONT) end
 end)
 
 LoadPOFile(MODROOT .. 'chinese_s.po', 'zh') -- 加载字符串换行修复文件
