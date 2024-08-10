@@ -1,6 +1,6 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-version = '2024.07.02.2'
+version = '2024.08.10'
 description = [[
 󰀏 制作目录皮肤名称字体替换方案：
 
@@ -24,7 +24,6 @@ icon = 'modicon.tex'
 
 dst_compatible = true
 client_only_mod = true
-all_clients_require_mod = false
 
 configuration_options = {
   {
