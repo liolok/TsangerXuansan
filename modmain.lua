@@ -37,8 +37,7 @@ local replace = { -- 替换列表，参考原版的 fonts.lua
 Assets = {} -- 资源列表
 for _, font in ipairs(fonts) do
   local file_path = MODROOT .. 'fonts/' .. font .. '.zip'
-  local fb = G.DEFAULT_FALLBACK_TABLE
-  if font:find('_outline$') then fb = G.DEFAULT_FALLBACK_TABLE_OUTLINE end
+  local fb = font:find('_outline$') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE
   table.insert(Assets, Asset('FONT', file_path))
   table.insert(G.FONTS, { filename = file_path, alias = 'tsanger_' .. font, fallback = fb })
 end
@@ -50,7 +49,11 @@ local function ApplyFonts() -- 应用字体
   G.TheSim:UnregisterPrefabs({ 'tsanger_fonts' })
   G.TheSim:RegisterPrefab('tsanger_fonts', Assets, {})
   G.TheSim:LoadPrefabs({ 'tsanger_fonts' })
-  G.LoadFonts()
+  for _, font in ipairs(fonts) do
+    G.TheSim:LoadFont(MODROOT .. 'fonts/' .. font .. '.zip', 'tsanger_' .. font)
+    local fallback = font:find('outline') and G.DEFAULT_FALLBACK_TABLE_OUTLINE or G.DEFAULT_FALLBACK_TABLE
+    G.TheSim:SetupFontFallbacks('tsanger_' .. font, fallback)
+  end
   for FONT, font in pairs(replace) do
     G[FONT] = 'tsanger_' .. font
   end
