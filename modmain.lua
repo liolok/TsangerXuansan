@@ -12,60 +12,64 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
 }
 
+-- stylua: ignore
+local replace = { -- 替换列表，参考原版的 fonts.lua
+  DEFAULTFONT           = 'stint_outline', -- opensans
+  TITLEFONT             = 'belisaplumilla_outline', -- bp100
+  UIFONT                = 'belisaplumilla_outline', -- bp50
+  BUTTONFONT            = 'bellefair', -- buttonfont
+  NEWFONT               = 'spirequal',
+  NEWFONT_SMALL         = 'spirequal', -- spirequal_small
+  NEWFONT_OUTLINE       = 'spirequal_outline',
+  NEWFONT_OUTLINE_SMALL = 'spirequal_outline', -- spirequal_outline_small
+  NUMBERFONT            = 'stint_outline', -- stint-ucr
+  TALKINGFONT           = 'belisaplumilla_outline', -- talkingfont
+  TALKINGFONT_WORMWOOD  = 'hennypenny_outline', -- talkingfont_wormwood
+  TALKINGFONT_TRADEIN   = 'belisaplumilla_outline', -- talkingfont_tradein
+  TALKINGFONT_HERMIT    = 'sugarplum_outline', -- talkingfont_hermit
+  CHATFONT              = 'bellefair',
+  HEADERFONT            = 'hammerhead',
+  CHATFONT_OUTLINE      = 'bellefair_outline',
+  SMALLNUMBERFONT       = 'stint_outline', -- stint-small
+  BODYTEXTFONT          = 'stint_outline', -- stint-ucr
+}
+
 Assets = {} -- 资源列表
-local file_path = {} -- 文件路径列表
 for _, font in ipairs(fonts) do
-  file_path[font] = MODROOT .. 'fonts/' .. font .. '.zip'
+  local file_path = MODROOT .. 'fonts/' .. font .. '.zip'
   local fb = G.DEFAULT_FALLBACK_TABLE
-  if font:find('outline') then fb = G.DEFAULT_FALLBACK_TABLE_OUTLINE end
-  table.insert(Assets, Asset('FONT', file_path[font]))
-  table.insert(G.FONTS, { filename = file_path[font], alias = 'tsanger_' .. font, fallback = fb })
+  if font:find('_outline$') then fb = G.DEFAULT_FALLBACK_TABLE_OUTLINE end
+  table.insert(Assets, Asset('FONT', file_path))
+  table.insert(G.FONTS, { filename = file_path, alias = 'tsanger_' .. font, fallback = fb })
 end
 
-local function RegisterFonts() -- 注册字体
+local function ApplyFonts() -- 应用字体
   for _, font in ipairs(fonts) do
     G.TheSim:UnloadFont('tsanger_' .. font)
   end
   G.TheSim:UnregisterPrefabs({ 'tsanger_fonts' })
   G.TheSim:RegisterPrefab('tsanger_fonts', Assets, {})
   G.TheSim:LoadPrefabs({ 'tsanger_fonts' })
-  for _, font in ipairs(fonts) do
-    G.TheSim:LoadFont(file_path[font], 'tsanger_' .. font)
+  G.LoadFonts()
+  for FONT, font in pairs(replace) do
+    G[FONT] = 'tsanger_' .. font
   end
-  G.DEFAULTFONT = 'tsanger_stint_outline' -- opensans
-  G.TITLEFONT = 'tsanger_belisaplumilla_outline' -- bp100
-  G.UIFONT = 'tsanger_belisaplumilla_outline' -- bp50
-  G.BUTTONFONT = 'tsanger_bellefair' -- buttonfont
-  G.NEWFONT = 'tsanger_spirequal'
-  G.NEWFONT_SMALL = 'tsanger_spirequal' -- spirequal_small
-  G.NEWFONT_OUTLINE = 'tsanger_spirequal_outline'
-  G.NEWFONT_OUTLINE_SMALL = 'tsanger_spirequal_outline' -- spirequal_outline_small
-  G.NUMBERFONT = 'tsanger_stint_outline' -- stint-ucr
-  G.TALKINGFONT = 'tsanger_belisaplumilla_outline' -- talkingfont
-  G.TALKINGFONT_WORMWOOD = 'tsanger_hennypenny_outline'
-  G.TALKINGFONT_TRADEIN = 'tsanger_belisaplumilla_outline'
-  G.TALKINGFONT_HERMIT = 'tsanger_sugarplum_outline'
-  G.CHATFONT = 'tsanger_bellefair'
-  G.HEADERFONT = 'tsanger_hammerhead'
-  G.CHATFONT_OUTLINE = 'tsanger_bellefair_outline'
-  G.SMALLNUMBERFONT = 'tsanger_stint_outline' -- stint-small
-  G.BODYTEXTFONT = 'tsanger_stint_outline' -- stint-ucr
 end
 
--- 插入字体注册函数
+-- 注入字体
 local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
-G.Sim.UnregisterAllPrefabs = function(self, ...)
-  OldUnregisterAllPrefabs(self, ...)
-  RegisterFonts()
+G.Sim.UnregisterAllPrefabs = function(...)
+  OldUnregisterAllPrefabs(...)
+  ApplyFonts()
 end
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
 G.ModManager.RegisterPrefabs = function(...)
   OldRegisterPrefabs(...)
-  RegisterFonts()
+  ApplyFonts()
 end
 local OldStart = G.Start
 G.Start = function()
-  RegisterFonts()
+  ApplyFonts()
   OldStart()
 end
 
