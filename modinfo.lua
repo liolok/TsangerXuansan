@@ -1,6 +1,6 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-version = '2024.08.11.1'
+version = '2024.08.11.2'
 description = '特殊原版字体适配：\n* 寄居蟹隐士：仓耳瓜藤体\n* 沃姆伍德：仓耳青丘小九'
 api_version = 10
 priority = -2022
