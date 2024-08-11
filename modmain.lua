@@ -1,16 +1,15 @@
 local G = GLOBAL
 
-local fonts = { -- 加入了中文字体的原版字体列表
-  'belisaplumilla_outline',
-  'bellefair_outline',
-  'bellefair',
-  'hammerhead',
-  'hennypenny_outline', -- 沃姆伍德：中文部分使用仓耳青丘小九
-  'spirequal_outline',
-  'spirequal',
-  'stint_outline',
-  'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
-}
+local fonts = {} -- 加入了中文字体的原版字体列表，手动调整排序以最小化字体错乱症状。
+fonts[5] = 'belisaplumilla_outline'
+fonts[4] = 'bellefair_outline'
+fonts[3] = 'bellefair'
+fonts[2] = 'hammerhead'
+fonts[9] = 'hennypenny_outline' -- 沃姆伍德：中文部分使用仓耳青丘小九
+fonts[8] = 'spirequal_outline'
+fonts[7] = 'spirequal'
+fonts[6] = 'stint_outline'
+fonts[1] = 'sugarplum_outline' -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
 
 -- stylua: ignore
 local replace = { -- 替换列表，参考原版的 fonts.lua
@@ -63,7 +62,7 @@ end
 local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
 G.Sim.UnregisterAllPrefabs = function(...)
   OldUnregisterAllPrefabs(...)
-  return pplyFonts()
+  return ApplyFonts()
 end
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
 G.ModManager.RegisterPrefabs = function(...)
