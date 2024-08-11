@@ -465,3 +465,8 @@ msgstr "你的游戏看起来是旧版本。\n我们建议你更新到最新的�
 msgctxt "STRINGS.UI.MODSSCREEN.CLEANALL_BODY"
 msgid "Are you sure you want to clean your local Workshop data?\nThis will result in a full download of all your subscribed mods, and your mod configuration settings being reset."
 msgstr "你确定想清理你本地创意工坊的数据吗？\n这样将全部下载你订用的所有模组，\n并且重设下你的模组配置。"
+
+#. STRINGS.UI.MAINSCREEN.STEAMOFFLINEMODEDESC
+msgctxt "STRINGS.UI.MAINSCREEN.STEAMOFFLINEMODEDESC"
+msgid "Couldn't connect to Steam (scheduled maintenance or connectivity issues). Characters and worlds from online games will be unavailable. Play offline?"
+msgstr "正在进行定期维护或存在连接问题。\n在线游戏的人物和世界不可用。\n是否进行离线游戏？"
