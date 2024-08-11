@@ -6,6 +6,15 @@ msgstr ""
 "POT Version: 2.0"
 
 ###
+### 世界设置
+###
+
+#. STRINGS.UI.CUSTOMIZATIONSCREEN.DROPEVERYTHINGONDESPAWN
+msgctxt "STRINGS.UI.CUSTOMIZATIONSCREEN.DROPEVERYTHINGONDESPAWN"
+msgid "Drop Items on Disconnect"
+msgstr "离开游戏物品掉落"
+
+###
 ### 交易小店
 ###
 

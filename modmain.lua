@@ -93,6 +93,18 @@ end)
 AddClassPostConstruct('widgets/skincollector', function(self)
   if self.text then self.text:SetSize(26 / ratio) end
 end)
+AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
+  local OldMakeScrollList = self.MakeScrollList
+  self.MakeScrollList = function(self)
+    OldMakeScrollList(self)
+    for _, widget in ipairs(self.scroll_list:GetListWidgets()) do
+      widget.opt_spinner.spinner.label:SetFont(G.HEADERFONT)
+      widget.opt_spinner.spinner.label:SetSize(22 / ratio)
+      widget.opt_spinner.spinner.text:SetFont(G.BUTTONFONT)
+      widget.opt_spinner.spinner.text:SetSize(20 / ratio)
+    end
+  end
+end)
 AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
@@ -107,6 +119,7 @@ AddClassPostConstruct('widgets/redux/serversettingstab', function(self) -- 创�
     buttonwidget.button:SetFont(G.NEWFONT)
   end
 end)
+AddClassPostConstruct('widgets/redux/worldsettings/presetbox', function(self) self.presets:SetFont(G.TITLEFONT) end)
 AddClassPostConstruct('screens/imagepopupdialog', function(self) -- 只有交易小店的警告在用这个弹窗
   self.title:SetFont(G.TITLEFONT)
   self.title:SetColour(G.unpack(G.WHITE))
