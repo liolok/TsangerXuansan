@@ -10,7 +10,6 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'spirequal',
   'stint_outline',
   'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
-  'belisaplumilla_outline', -- 防止寄居蟹字体和常用字体错乱
 }
 
 -- stylua: ignore
@@ -64,17 +63,17 @@ end
 local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
 G.Sim.UnregisterAllPrefabs = function(...)
   OldUnregisterAllPrefabs(...)
-  ApplyFonts()
+  return pplyFonts()
 end
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
 G.ModManager.RegisterPrefabs = function(...)
   OldRegisterPrefabs(...)
-  ApplyFonts()
+  return ApplyFonts()
 end
 local OldStart = G.Start
 G.Start = function()
-  ApplyFonts()
-  OldStart()
+  ApplyFonts() -- 此处会概率触发字体错乱，克雷全责。
+  return OldStart()
 end
 
 -- 缩放倍率
