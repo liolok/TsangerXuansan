@@ -1,11 +1,9 @@
-[h2]这是一个中文字体模组，它本质上是一种美化包，不会更改任何游戏内容！[/h2]
+[h2]这是一个字体模组，它本质上是一种美化包，不会更改任何游戏内容！[/h2]
 
-基于原版的英文数字字体加入：
+基于原版英文/数字加入了中文字体：
 [list]
-[*][url=http://tsanger.cn/product/18]仓耳玄三 03-W03[/url]：几乎全部覆盖
-
+[*][url=http://tsanger.cn/product/18]仓耳玄三 03-W03[/url]：全部覆盖
 [*][url=http://tsanger.cn/product/232]仓耳瓜藤体[/url]：寄居蟹隐士的台词字体
-
 [*][url=http://tsanger.cn/product/330]仓耳青丘小九[/url]：沃姆伍德的台词字体
 [/list]
 
@@ -16,11 +14,8 @@
 [h2]致谢[/h2]
 [list]
 [*]幽晚枫乐：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2771766820]仓耳玄三字体模组[/url]
-
-[*]dreamofcoffee：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3219288478]修复交易小店空白语句[/url]、制作菜单皮肤名称字体覆盖
-
+[*]dreamofcoffee：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3219288478]修复空白语句模组[/url]
 [*]所有其它字体模组的作者们
-
 [*]李皓奇：代码编辑、协助测试
 [/list]
 
