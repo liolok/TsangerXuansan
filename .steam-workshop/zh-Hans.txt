@@ -26,6 +26,10 @@
 
 [strike]没错我只参与了字体设计和贴图转化，代码方面是一点没动（ [/strike]
 
+[h2]已知问题[/h2]
+
+加载提示、暂停提示、调试日志会有字体错乱现象，科雷全责。
+
 [hr][/hr]
 
 [url=https://github.com/liolok/TsangerXuansan]源码[/url]
