@@ -471,6 +471,11 @@ msgctxt "STRINGS.UI.MAINSCREEN.STEAMOFFLINEMODEDESC"
 msgid "Couldn't connect to Steam (scheduled maintenance or connectivity issues). Characters and worlds from online games will be unavailable. Play offline?"
 msgstr "正在进行定期维护或存在连接问题。\n在线游戏的人物和世界不可用。\n是否进行离线游戏？"
 
+#. STRINGS.UI.GAMEMODES.SURVIVAL_DESCRIPTION
+msgctxt "STRINGS.UI.GAMEMODES.SURVIVAL_DESCRIPTION"
+msgid "We survive together, we die together!\n\n* Survive through the seasons and protect yourself from the world.\n* Uncover ancient secrets hidden within the shadows.\n* Grow crops, catch fish, hunt for meat. Whatever you do, don't starve."
+msgstr "一起生，一起死！\n\n* 活过每一个季节，保护自己不受来自世界的伤害。\n* 发掘藏在暗影中的远古秘密。\n* 耕种作物、抓鱼、狩猎动物获取肉。\n不管你做什么，总之不要饿死。"
+
 ###
 ### 用「口吾」替换未覆盖的「口母」
 ###
