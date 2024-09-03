@@ -66,8 +66,8 @@ G.Start = function()
   return OldStart()
 end
 
--- 加载字符串换行修复文件
-LoadPOFile(MODROOT .. 'chinese_s_patch.po', 'zh')
+-- 加载字符串修复文件
+modimport('chinese_s_patch')
 
 -- 缩放倍率
 local ratio = GetModConfigData('font_scale_ratio')
