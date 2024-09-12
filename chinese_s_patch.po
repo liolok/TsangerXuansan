@@ -471,6 +471,11 @@ msgctxt "STRINGS.UI.MAINSCREEN.STEAMOFFLINEMODEDESC"
 msgid "Couldn't connect to Steam (scheduled maintenance or connectivity issues). Characters and worlds from online games will be unavailable. Play offline?"
 msgstr "正在进行定期维护或存在连接问题。\n在线游戏的人物和世界不可用。\n是否进行离线游戏？"
 
+#. STRINGS.UI.MAINSCREEN.OFFLINEMODEDESC
+msgctxt "STRINGS.UI.MAINSCREEN.OFFLINEMODEDESC"
+msgid "Could not connect to Klei's servers. Characters and worlds from online games will be unavailable. Continue and play offline?"
+msgstr "无法连接到科雷服务器。\n在线游戏的人物和世界不可用。\n是否继续并离线游戏？"
+
 #. STRINGS.UI.GAMEMODES.SURVIVAL_DESCRIPTION
 msgctxt "STRINGS.UI.GAMEMODES.SURVIVAL_DESCRIPTION"
 msgid "We survive together, we die together!\n\n* Survive through the seasons and protect yourself from the world.\n* Uncover ancient secrets hidden within the shadows.\n* Grow crops, catch fish, hunt for meat. Whatever you do, don't starve."
