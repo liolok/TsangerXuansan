@@ -1,5 +1,8 @@
 local G = GLOBAL
 
+local hermit = GetModConfigData('enable_hermit_font')
+local wormwood = GetModConfigData('enable_wormwood_font')
+
 local fonts = { -- 加入了中文字体的原版字体列表
   'belisaplumilla_outline',
   'bellefair_outline',
@@ -11,6 +14,9 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'stint_outline',
   'sugarplum_outline',
 }
+
+if hermit then table.insert(fonts, 'sugarplum_outline') end -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
+if wormwood then table.insert(fonts, 'hennypenny_outline') end -- 沃姆伍德：中文部分使用仓耳青丘小九
 
 -- stylua: ignore
 local replace = { -- 替换列表
@@ -29,8 +35,8 @@ local replace = { -- 替换列表
   ['stint-small']             = 'stint_outline',
   ['talkingfont']             = 'belisaplumilla_outline',
   ['talkingfont_tradein']     = 'belisaplumilla_outline',
-  ['talkingfont_hermit']      = 'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
-  ['talkingfont_wormwood']    = 'hennypenny_outline', -- 沃姆伍德：中文部分使用仓耳青丘小九
+  ['talkingfont_hermit']      = hermit and 'sugarplum_outline' or 'belisaplumilla_outline',
+  ['talkingfont_wormwood']    = wormwood and 'hennypenny_outline' or 'belisaplumilla_outline',
 }
 
 -- 注入字体

@@ -57,4 +57,24 @@ configuration_options = {
     },
     default = 32,
   },
+  {
+    name = 'enable_hermit_font',
+    label = '寄居蟹隐士字体',
+    hover = '是否启用寄居蟹隐士专属字体',
+    options = {
+      { description = '禁用', data = false },
+      { description = '启用', data = true },
+    },
+    default = true,
+  },
+  {
+    name = 'enable_wormwood_font',
+    label = '沃姆伍德角色字体',
+    hover = '是否启用沃姆伍德角色专属字体',
+    options = {
+      { description = '禁用', data = false },
+      { description = '启用', data = true },
+    },
+    default = true,
+  },
 }
