@@ -89,6 +89,15 @@ AddClassPostConstruct('widgets/ingredientui', function(self)
   if self.quant then self.quant:SetSize(32 / ratio) end
 end)
 
+-- 暂停提示
+AddClassPostConstruct('widgets/redux/serverpausewidget', function(self)
+  local OldUpdateText = self.UpdateText
+  self.UpdateText = function(self, source)
+    if self.text then self.text:SetFont(G.UIFONT) end
+    OldUpdateText(self, source)
+  end
+end)
+
 -- 世界设置
 AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
   local OldMakeScrollList = self.MakeScrollList
