@@ -89,6 +89,12 @@ AddClassPostConstruct('widgets/ingredientui', function(self)
   if self.quant then self.quant:SetSize(32 / ratio) end
 end)
 
+-- 加载提示
+AddClassPostConstruct('widgets/redux/loadingwidget', function(self)
+  if self.loading_widget then self.loading_widget:SetFont(G.HEADERFONT) end
+  if self.loading_tip_text then self.loading_tip_text:SetFont(G.CHATFONT_OUTLINE) end
+end)
+
 -- 暂停提示
 AddClassPostConstruct('widgets/redux/serverpausewidget', function(self)
   local OldUpdateText = self.UpdateText
