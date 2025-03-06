@@ -91,8 +91,12 @@ end)
 
 -- 加载提示
 AddClassPostConstruct('widgets/redux/loadingwidget', function(self)
-  if self.loading_widget then self.loading_widget:SetFont(G.HEADERFONT) end
-  if self.loading_tip_text then self.loading_tip_text:SetFont(G.CHATFONT_OUTLINE) end
+  local OldOnUpdate = self.OnUpdate
+  self.OnUpdate = function(self, dt)
+    if self.loading_widget then self.loading_widget:SetFont(G.UIFONT) end
+    if self.loading_tip_text then self.loading_tip_text:SetFont(G.CHATFONT_OUTLINE) end
+    OldOnUpdate(self, dt)
+  end
 end)
 
 -- 暂停提示
