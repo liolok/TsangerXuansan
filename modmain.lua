@@ -8,15 +8,12 @@ local fonts = { -- 加入了中文字体的原版字体列表
   'bellefair_outline',
   'bellefair',
   'hammerhead',
-  'hennypenny_outline',
+  'hennypenny_outline', -- 沃姆伍德：中文部分使用仓耳青丘小九
   'spirequal_outline',
   'spirequal',
   'stint_outline',
-  'sugarplum_outline',
+  'sugarplum_outline', -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
 }
-
-if hermit then table.insert(fonts, 'sugarplum_outline') end -- 寄居蟹隐士：中文部分使用仓耳瓜藤体
-if wormwood then table.insert(fonts, 'hennypenny_outline') end -- 沃姆伍德：中文部分使用仓耳青丘小九
 
 -- stylua: ignore
 local replace = { -- 替换列表
