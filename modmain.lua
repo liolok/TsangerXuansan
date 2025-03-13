@@ -129,3 +129,12 @@ AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
 end)
+
+-- 控制台日志
+AddGlobalClassPostConstruct('frontend', 'FrontEnd', function(self)
+  local OldShowConsoleLog = self.ShowConsoleLog
+  self.ShowConsoleLog = function(self)
+    if self.consoletext then self.consoletext:SetFont(G.BODYTEXTFONT) end
+    return OldShowConsoleLog(self)
+  end
+end)
