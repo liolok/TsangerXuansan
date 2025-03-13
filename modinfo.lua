@@ -1,12 +1,11 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-version = '2025.01.29'
+version = '2025.03.13'
 description = [[
 特殊原版字体适配：
 * 寄居蟹隐士：仓耳瓜藤体
 * 沃姆伍德：仓耳青丘小九
-已知问题：
-加载提示、暂停提示、调试日志会有字体错乱现象，科雷全责。]]
+]]
 api_version = 10
 priority = -2022
 

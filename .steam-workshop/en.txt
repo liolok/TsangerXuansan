@@ -1,0 +1,16 @@
+[h3]This is a Simplified Chinese font mod. It may not work with your language.[/h3]
+
+However, this mod contains high-resolution chars, and won't change the original fonts[strike], mostly[/strike].
+
+Subscribe to this mod according to your needs.
+
+[h2]Acknowledgements[/h2]
+[list]
+  [*]X.P.87&Skull: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=678340265]原版高清字体[/url]
+  [*]幽晚枫乐; [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2771766820]仓耳玄三字体[/url]
+  [*]liolok: Coder and tester.
+[/list]
+
+[hr][/hr] 
+
+[url=https://github.com/liolok/TsangerXuansan]Source code[/url]
