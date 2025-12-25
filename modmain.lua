@@ -88,9 +88,14 @@ AddClassPostConstruct('widgets/controls', function(self)
   if self.seasonclock and self.seasonclock._text then self.seasonclock._text:SetSize(34 / ratio) end
 end)
 
--- 制作配方
+-- 制作配方 材料数量 字号
 AddClassPostConstruct('widgets/ingredientui', function(self)
   if self.quant then self.quant:SetSize(32 / ratio) end
+end)
+
+-- 制作配方 皮肤选择器
+AddClassPostConstruct('widgets/redux/craftingmenu_skinselector', function(self)
+  if self.spinner and self.spinner.text then self.spinner.text:SetFont(G.NUMBERFONT) end
 end)
 
 -- 加载提示
