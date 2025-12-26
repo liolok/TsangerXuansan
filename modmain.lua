@@ -117,6 +117,14 @@ AddClassPostConstruct('widgets/redux/serverpausewidget', function(self)
   end
 end)
 
+-- 服务器设置
+AddClassPostConstruct('widgets/redux/serversettingstab', function(self)
+  local buttons = self.privacy_type and self.privacy_type.buttons or {}
+  for _, widget in ipairs(buttons.buttonwidgets or {}) do
+    if widget and widget.button then widget.button:SetFont(G.NEWFONT) end
+  end
+end)
+
 -- 世界设置
 AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
   local OldMakeScrollList = self.MakeScrollList
