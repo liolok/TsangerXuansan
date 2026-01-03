@@ -83,6 +83,12 @@ modimport('chinese_s_patch')
 local ratio = GetModConfigData('font_scale_ratio')
 G.LOC.GetTextScale = function() return ratio end
 
+-- 交易小店 最后一件 警告弹窗
+AddClassPostConstruct('screens/imagepopupdialog', function(self)
+  if self.title then self.title:SetFont(G.BUTTONFONT) end
+  if self.text then self.text:SetFont(G.NEWFONT) end
+end)
+
 -- 季节时钟
 AddClassPostConstruct('widgets/controls', function(self)
   if self.seasonclock and self.seasonclock._text then self.seasonclock._text:SetSize(34 / ratio) end
