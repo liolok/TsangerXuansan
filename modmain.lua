@@ -164,3 +164,13 @@ AddGlobalClassPostConstruct('frontend', 'FrontEnd', function(self)
     return OldShowConsoleLog(self)
   end
 end)
+
+-- 检测还未替换字体的文本控件，直接替换成寄居蟹专属字体，就当彩蛋了。
+local function is_replaced(font)
+  for _, v in ipairs(fonts) do
+    if font == 'tsanger_' .. v then return true end
+  end
+end
+AddClassPostConstruct('widgets/text', function(self)
+  if not is_replaced(self.font) then self:SetFont('tsanger_sugarplum_outline') end
+end)
