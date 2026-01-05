@@ -18,6 +18,16 @@ client_only_mod = true
 
 configuration_options = {
   {
+    name = 'replace_fonts_fully_but_crash_when_mod_disabled',
+    label = '全面替换',
+    hover = '全面替换字体，但模组被关闭就会崩溃。',
+    options = {
+      { description = '不用了吧', data = false },
+      { description = '无视风险', data = true },
+    },
+    default = false,
+  },
+  {
     name = 'font_scale_ratio',
     label = '缩放倍率',
     options = {
