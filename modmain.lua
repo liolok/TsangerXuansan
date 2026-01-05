@@ -6,8 +6,10 @@ else
   modimport('replace_fonts_safely')
 end
 
--- 加载字符串修复文件
-modimport('chinese_s_patch')
+modimport('chinese_s_patch') -- 加载字符串修复文件
+
+--------------------------------------------------------------------------------
+-- 字号微调
 
 -- 缩放倍率
 local ratio = GetModConfigData('font_scale_ratio')
@@ -32,4 +34,35 @@ end)
 AddClassPostConstruct('widgets/uiclock', function(self)
   if self._text then self._text:SetSize(GetModConfigData('world_clock_size') / ratio) end
   if self._moonanim and self._moonanim.moontext then self._moonanim.moontext:SetSize(18 / ratio) end
+end)
+
+--------------------------------------------------------------------------------
+-- 错乱修复
+
+-- 加载提示
+AddClassPostConstruct('widgets/redux/loadingwidget', function(self)
+  local OldOnUpdate = self.OnUpdate
+  function self:OnUpdate(dt)
+    if self.loading_widget then self.loading_widget:SetFont(G.UIFONT) end
+    if self.loading_tip_text then self.loading_tip_text:SetFont(G.CHATFONT_OUTLINE) end
+    OldOnUpdate(self, dt)
+  end
+end)
+
+-- 暂停提示
+AddClassPostConstruct('widgets/redux/serverpausewidget', function(self)
+  local OldUpdateText = self.UpdateText
+  function self:UpdateText(...)
+    if self.text then self.text:SetFont(G.UIFONT) end
+    OldUpdateText(self, ...)
+  end
+end)
+
+-- 控制台日志
+AddGlobalClassPostConstruct('frontend', 'FrontEnd', function(self)
+  local OldShowConsoleLog = self.ShowConsoleLog
+  function self:ShowConsoleLog()
+    if self.consoletext then self.consoletext:SetFont(G.BODYTEXTFONT) end
+    return OldShowConsoleLog(self)
+  end
 end)

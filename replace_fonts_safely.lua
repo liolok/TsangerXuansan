@@ -77,7 +77,7 @@ G.Start = function()
 end
 
 --------------------------------------------------------------------------------
--- 字体覆盖补全
+-- 覆盖补全
 local ratio = GetModConfigData('font_scale_ratio') -- 缩放倍率
 
 -- 交易小店 最后一件 警告弹窗
@@ -89,25 +89,6 @@ end)
 -- 制作配方 皮肤选择器
 AddClassPostConstruct('widgets/redux/craftingmenu_skinselector', function(self)
   if self.spinner and self.spinner.text then self.spinner.text:SetFont(G.NUMBERFONT) end
-end)
-
--- 加载提示
-AddClassPostConstruct('widgets/redux/loadingwidget', function(self)
-  local OldOnUpdate = self.OnUpdate
-  function self:OnUpdate(dt)
-    if self.loading_widget then self.loading_widget:SetFont(G.UIFONT) end
-    if self.loading_tip_text then self.loading_tip_text:SetFont(G.CHATFONT_OUTLINE) end
-    OldOnUpdate(self, dt)
-  end
-end)
-
--- 暂停提示
-AddClassPostConstruct('widgets/redux/serverpausewidget', function(self)
-  local OldUpdateText = self.UpdateText
-  function self:UpdateText(...)
-    if self.text then self.text:SetFont(G.UIFONT) end
-    OldUpdateText(self, ...)
-  end
 end)
 
 -- 服务器设置
@@ -129,15 +110,6 @@ AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
       widget.opt_spinner.spinner.text:SetFont(G.BUTTONFONT)
       widget.opt_spinner.spinner.text:SetSize(20 / ratio)
     end
-  end
-end)
-
--- 控制台日志
-AddGlobalClassPostConstruct('frontend', 'FrontEnd', function(self)
-  local OldShowConsoleLog = self.ShowConsoleLog
-  function self:ShowConsoleLog()
-    if self.consoletext then self.consoletext:SetFont(G.BODYTEXTFONT) end
-    return OldShowConsoleLog(self)
   end
 end)
 
