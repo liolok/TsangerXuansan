@@ -1,6 +1,6 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-local date = '2026-01-05'
+local date = '2026-01-11'
 version = date .. ''
 description = [[
 󰀏 特殊原版字体适配：
