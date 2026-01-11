@@ -78,7 +78,6 @@ end
 
 --------------------------------------------------------------------------------
 -- 覆盖补全
-local ratio = GetModConfigData('font_scale_ratio') -- 缩放倍率
 
 -- 交易小店 最后一件 警告弹窗
 AddClassPostConstruct('screens/imagepopupdialog', function(self)
@@ -104,11 +103,15 @@ AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
   local OldMakeScrollList = self.MakeScrollList
   function self:MakeScrollList()
     OldMakeScrollList(self)
-    for _, widget in ipairs(self.scroll_list:GetListWidgets()) do
-      widget.opt_spinner.spinner.label:SetFont(G.HEADERFONT)
-      widget.opt_spinner.spinner.label:SetSize(22 / ratio)
-      widget.opt_spinner.spinner.text:SetFont(G.BUTTONFONT)
-      widget.opt_spinner.spinner.text:SetSize(20 / ratio)
+    local scroll_list = self.scroll_list
+    if not (scroll_list and scroll_list.GetListWidgets) then return end
+
+    for _, widget in ipairs(scroll_list:GetListWidgets()) do
+      local spinner = widget.opt_spinner and widget.opt_spinner.spinner
+      if spinner then
+        if spinner.label then spinner.label:SetFont(G.HEADERFONT) end
+        if spinner.text then spinner.text:SetFont(G.BUTTONFONT) end
+      end
     end
   end
 end)

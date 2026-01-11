@@ -25,6 +25,24 @@ AddClassPostConstruct('widgets/ingredientui', function(self)
   if self.quant then self.quant:SetSize(32 / ratio) end
 end)
 
+-- 世界设置
+AddClassPostConstruct('widgets/redux/worldsettings/settingslist', function(self)
+  local OldMakeScrollList = self.MakeScrollList
+  function self:MakeScrollList()
+    OldMakeScrollList(self)
+    local scroll_list = self.scroll_list
+    if not (scroll_list and scroll_list.GetListWidgets) then return end
+
+    for _, widget in ipairs(scroll_list:GetListWidgets()) do
+      local spinner = widget.opt_spinner and widget.opt_spinner.spinner
+      if spinner then
+        if spinner.label then spinner.label:SetSize(22 / ratio) end
+        if spinner.text then spinner.text:SetSize(22 / ratio) end
+      end
+    end
+  end
+end)
+
 -- 交易小店 店主台词 字号
 AddClassPostConstruct('widgets/skincollector', function(self)
   if self.text then self.text:SetSize(26 / ratio) end
