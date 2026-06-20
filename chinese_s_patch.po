@@ -306,6 +306,11 @@ msgctxt "STRINGS.UI.START_SHADOW_RIFTS.BODY"
 msgid "Be warned, assisting the Shadow Queen will alter your world and cannot be undone. Beautiful, terrible things will rise to the surface.\n\nAre you sure you'd like to continue?"
 msgstr "请注意，协助暗影女王将改变你的世界，并且无法挽回。\n美丽而可怕的事情将会浮出水面。\n\n您确定要继续吗？"
 
+#. STRINGS.UI.GIVE_KEY_STONE.BODY
+msgctxt "STRINGS.UI.GIVE_KEY_STONE.BODY"
+msgid "The Shadow Queen is pleased with your progress. She will begin the final preparations, and call upon you when the time is right. Be ready.\nP.S. For now, this will only reset the Sanctum. Continue?"
+msgstr "暗影女王对你的进展感到满意。\n她将开始最后的准备，并在时机成熟时召唤你。\n做好准备。\n附：目前这只会重置圣殿。继续吗？"
+
 #. STRINGS.UI.START_LUNAR_RIFTS.BODY
 msgctxt "STRINGS.UI.START_LUNAR_RIFTS.BODY"
 msgid "Be warned, assisting the Cryptic Founder will alter your world and cannot be undone. Much will be lost and gained in the name of Progress.\n\nAre you sure you'd like to continue?"
@@ -325,6 +330,16 @@ msgstr "你确定要加入暂停的世界吗？\n在服务器取消暂停前，�
 msgctxt "STRINGS.UI.SERVERLISTINGSCREEN.MOD_WARNING_BODY"
 msgid "This server has mods enabled. Klei won't be able to help if you encounter issues while playing on a modded server."
 msgstr "此服务器已启用模组。\n在启用模组服务器上打游戏时，如果您遇到问题，Klei 无法提供帮助。"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.MODSDISABLEDWARNINGBODY
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.MODSDISABLEDWARNINGBODY"
+msgid "Some mods used on this save are disabled, which could cause issues. Continue?"
+msgstr "此存档所用的一些模组已禁用。\n这可能会导致问题。要继续吗？"
+
+#. STRINGS.UI.SERVERCREATIONSCREEN.MODSOUTOFDATEWARNINGBODY
+msgctxt "STRINGS.UI.SERVERCREATIONSCREEN.MODSOUTOFDATEWARNINGBODY"
+msgid "Some enabled mods are out of date, which could cause issues. Continue?"
+msgstr "一些启用的模组过期了。\n这可能会导致问题。要继续吗？"
 
 #. STRINGS.UI.OPTIONS.RESTART_TEXTURE_STREAMING_BODY
 msgctxt "STRINGS.UI.OPTIONS.RESTART_TEXTURE_STREAMING_BODY"
