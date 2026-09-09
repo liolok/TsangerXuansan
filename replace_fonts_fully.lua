@@ -22,8 +22,6 @@ local replace = { -- 替换列表
 }
 
 -- 注入字体
-local fonts_loaded = false -- 本局是否已经注册并加载过 tsanger_fonts
-
 local function ReloadFonts()
   Assets = {}
   for _, v in ipairs(G.FONTS) do
@@ -35,20 +33,21 @@ local function ReloadFonts()
       G.TheSim:UnloadFont(v.alias)
     end
   end
-  -- 最新测试版引擎：UnregisterPrefabs 只允许注销“未加载”的 prefab，
-  -- 否则触发 C++ 断言 (mLoadFlags & PrefabLoadFlags_Loaded) == 0。
-  -- 与游戏内置 loadedprefabs 记账一致，注销前先 UnloadPrefabs。
-  if fonts_loaded then G.TheSim:UnloadPrefabs({ 'tsanger_fonts' }) end
+  -- 兼容最新测试版引擎：不要对仍处于“已加载(Loaded)”状态的 prefab 调用
+  -- UnregisterPrefabs，否则触发 C++ 断言 (mLoadFlags & PrefabLoadFlags_Loaded) == 0。
+  -- 游戏引擎自身的 prefab 换代（SimReset 后对旧 MOD_ prefab 的处理、以及
+  -- ModManager:RegisterPrefabs 反复重注册）从不调用按名字的 UnregisterPrefabs，
+  -- 而是先 TheSim:UnloadPrefabs 再 RegisterPrefab 覆盖；对不存在的名字执行
+  -- UnloadPrefabs 是无害的，因此这里无条件执行即可，无需本地记账。
+  G.TheSim:UnloadPrefabs({ 'tsanger_fonts' })
   G.TheSim:UnregisterPrefabs({ 'tsanger_fonts' })
   G.TheSim:RegisterPrefab('tsanger_fonts', Assets, {})
   G.TheSim:LoadPrefabs({ 'tsanger_fonts' })
-  fonts_loaded = true
   G.LoadFonts()
 end
 local OldUnregisterAllPrefabs = G.Sim.UnregisterAllPrefabs
 G.Sim.UnregisterAllPrefabs = function(...)
   OldUnregisterAllPrefabs(...)
-  fonts_loaded = false -- 引擎已注销全部 prefab，之后需要重新注册加载
   return ReloadFonts()
 end
 local OldRegisterPrefabs = G.ModManager.RegisterPrefabs
