@@ -1,11 +1,12 @@
 name = '中文字体：仓耳玄三'
 author = 'Skull, gcc, EvenMr, 幽晚枫乐, iaman2b & 李皓奇'
-local date = '2026-06-20'
+local date = '2026-09-09'
 version = date .. ''
 description = [[
 󰀏 特殊原版字体适配：
 * 寄居蟹隐士：仓耳瓜藤体
 * 沃姆伍德：仓耳青丘小九
+󰀰 修复最新测试版下 UnregisterPrefabs 断言崩溃的问题。
 󰀰 最后更新于：]] .. date
 api_version = 10
 priority = -2022
