@@ -5,7 +5,7 @@ description = [[
 󰀏 特殊原版字体适配：
 * 寄居蟹隐士：仓耳瓜藤体
 * 沃姆伍德：仓耳青丘小九
-]] .. '\n󰀰 ' .. T('Version: ', '版本：') .. version
+]] .. '\n󰀰 版本：' .. version
 api_version = 10
 priority = -2022
 
