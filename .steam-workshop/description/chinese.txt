@@ -2,9 +2,10 @@
 
 基于原版英文/数字加入了中文字体：
 [list]
-[*][url=http://tsanger.cn/product/18]仓耳玄三 03-W03[/url]：全部覆盖
-[*][url=http://tsanger.cn/product/232]仓耳瓜藤体[/url]：寄居蟹隐士的台词字体
-[*][url=http://tsanger.cn/product/330]仓耳青丘小九[/url]：沃姆伍德的台词字体
+[*][url=https://tsanger.cn/product/18]仓耳玄三 03-W03[/url]：全部覆盖
+[*][url=https://tsanger.cn/product/232]仓耳瓜藤体[/url]：寄居蟹隐士的台词字体
+[*][url=https://tsanger.cn/product/330]仓耳青丘小九[/url]：沃姆伍德的台词字体
+[*][url=https://tsanger.cn/product/400]仓耳康有为体[/url]：查理 NPC 的台词字体
 [/list]
 
 另外，我们在一定程度上提高了字体分辨率，使其在高分辨率的显示器上也可以[strike]较为[/strike]清晰的显示。

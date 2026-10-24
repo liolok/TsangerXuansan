@@ -28,6 +28,7 @@ local font_table = {
   TALKINGFONT_WORMWOOD  = GetModConfigData('enable_wormwood_font') and 'hennypenny_outline' or 'belisaplumilla_outline',
   TALKINGFONT_TRADEIN   = 'belisaplumilla_outline',
   TALKINGFONT_HERMIT    = GetModConfigData('enable_hermit_font') and 'sugarplum_outline' or 'belisaplumilla_outline',
+  TALKINGFONT_CHARLIE   = GetModConfigData('enable_charlie_font') and 'kang_you_wei' or 'belisaplumilla_outline',
   CHATFONT              = 'bellefair',
   HEADERFONT            = 'hammerhead',
   CHATFONT_OUTLINE      = 'bellefair_outline',

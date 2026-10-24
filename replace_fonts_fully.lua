@@ -19,6 +19,7 @@ local replace = { -- 替换列表
   ['talkingfont_tradein']     = 'belisaplumilla_outline',
   ['talkingfont_hermit']      = GetModConfigData('enable_hermit_font') and 'sugarplum_outline' or 'belisaplumilla_outline',
   ['talkingfont_wormwood']    = GetModConfigData('enable_wormwood_font') and 'hennypenny_outline' or 'belisaplumilla_outline',
+  ['talkingfont_charlie']     = GetModConfigData('enable_charlie_font') and 'kang_you_wei' or 'belisaplumilla_outline',
 }
 
 -- 注入字体

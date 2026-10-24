@@ -5,6 +5,7 @@ description = [[
 󰀏 特殊原版字体适配：
 * 寄居蟹隐士：仓耳瓜藤体
 * 沃姆伍德：仓耳青丘小九
+* 查理 NPC：仓耳康有为体
 ]] .. '\n󰀰 版本：' .. version
 api_version = 10
 priority = -2022
@@ -80,6 +81,16 @@ configuration_options = {
     name = 'enable_wormwood_font',
     label = '沃姆伍德角色字体',
     hover = '是否启用沃姆伍德角色专属字体',
+    options = {
+      { description = '禁用', data = false },
+      { description = '启用', data = true },
+    },
+    default = true,
+  },
+  {
+    name = 'enable_charlie_font',
+    label = '查理 NPC 字体',
+    hover = '是否启用查理 NPC 专属字体',
     options = {
       { description = '禁用', data = false },
       { description = '启用', data = true },
